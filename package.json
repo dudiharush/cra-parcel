@@ -1,7 +1,7 @@
 {
   "name": "cra-parcel",
   "version": "1.0.2",
-  "description": "create a full-blown React App project, that uses Parcel bundler, in a single command",
+  "description": "create a React Typescript App project, that uses Parcel for bundling, and Jest for testing",
   "bin": {
     "create-ts-lib": "src/cli.js"
   },
