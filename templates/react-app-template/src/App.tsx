@@ -6,4 +6,4 @@ export const App = () => {
       <h2>Hello React Parcel App</h2>
     </div>
   );
-}
+};

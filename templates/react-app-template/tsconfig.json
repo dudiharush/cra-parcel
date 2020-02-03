@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "~*": ["./*"]
+    },
+    "esModuleInterop": true
+  },
+  "types": ["jest"],
+  "include": ["src/**/*"],
+  "files": [
+    "src\\node_modules\\@testing-library]\\jest-dom\\extend-expect.d.ts"
+  ]
+}
