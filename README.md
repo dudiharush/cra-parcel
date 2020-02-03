@@ -4,6 +4,6 @@ create a React Typescript App project, that uses Parcel for bundling, and Jest f
 
 # Usage
 
-npx cra-parcel [app name]
-cd [app name]
+npx cra-parcel [app name]\
+cd [app name]\
 npm start
