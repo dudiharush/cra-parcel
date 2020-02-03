@@ -1,0 +1,34 @@
+{
+  "name": "cra-parcel",
+  "version": "1.0.0",
+  "description": "create a full-blown React App project, that uses Parcel bundler, in a single command",
+  "bin": {
+    "create-ts-lib": "src/cli.js"
+  },
+  "scripts": {
+    "rename": "node -e \"require('fs').rename('./templates/react-app-template/package.json', './templates/react-app-template/package-tmp.json', function(err) { if (err) console.log(err); console.log('file successfully renamed!') })\"",
+    "undo-rename": "node -e \"require('fs').rename('./templates/react-app-template/package-tmp.json', './templates/react-app-template/package.json', function(err) { if (err) console.log(err); console.log('undo-rename finished successfully!') })\"",
+    "prepack": "npm run rename",
+    "postpack": "npm run undo-rename"
+  },
+  "keywords": [
+    "create react app",
+    "parcel"
+  ],
+  "author": "David Harush <davidharush@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dudiharush/create-ts-lib.git"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.1.0",
+    "fs-extra": "^8.1.0",
+    "npm-author-name": "^1.0.5"
+  },
+  "files": [
+    "templates",
+    "src/cli.js"
+  ]
+}
